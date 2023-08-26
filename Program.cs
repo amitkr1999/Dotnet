@@ -6,6 +6,8 @@ namespace HelloWorld{
 
         static void Main(string[] args){
 
+            //Variables
+
              // 1 byte is made up of 8 bits 00000000 - these bits can be used to store a number as follows
             //// Each bit can be worth 0 or 1 of the value it is placed in
             ////// From the right we start with a value of 1 and double for each digit to the left
@@ -67,18 +69,82 @@ namespace HelloWorld{
  
             // bool myBool = true;
 
-            String[] myGroceryArray = new string[2];
+            // //Array
 
-            myGroceryArray[0]   = "Apple";
-            myGroceryArray[1]   = "Ice Cream";
+            // String[] myGroceryArray = new string[2];
 
-            Console.WriteLine(myGroceryArray[0]);
-            Console.WriteLine(myGroceryArray[1]);
+            // myGroceryArray[0]   = "Apple";
+            // myGroceryArray[1]   = "Ice Cream";
 
-            string[] mysecondGroceryArray = {"Mango", "Banana",};
+            // Console.WriteLine(myGroceryArray[0]);
+            // Console.WriteLine(myGroceryArray[1]);
+
+            // string[] mysecondGroceryArray = {"Mango", "Banana",};
             
-            Console.WriteLine(mysecondGroceryArray[0]);
-            Console.WriteLine(mysecondGroceryArray[1]);
+            // Console.WriteLine(mysecondGroceryArray[0]);
+            // Console.WriteLine(mysecondGroceryArray[1]);
+
+            // List<string> myGroceryList = new List<string>() { "Milk", "Cheese" };
+
+            // Console.WriteLine(myGroceryList[0]);
+            // Console.WriteLine(myGroceryList[1]);
+
+            // myGroceryList.Add("Orange");
+            // Console.WriteLine(myGroceryList[2]);
+
+
+            // IEnumerable<string> myGroceryIEnumerable = myGroceryList;
+
+            // Console.WriteLine(myGroceryIEnumerable.First());
+
+            // string[,] myTwoDimentionalArray = new string[,]{
+            //     {"Apple" , "Eggs"},
+            //     {"Milk" , "Cheese"},
+            // };
+
+            // Console.WriteLine(myTwoDimentionalArray[1,1]);   
+
+            //Operators
+
+            int myInt = 5;
+            Console.WriteLine(myInt);
+
+            myInt++;
+
+            Console.WriteLine(myInt);
+
+            myInt += 7;
+
+            Console.WriteLine(myInt); 
+
+             myInt -= 8;
+
+            Console.WriteLine(myInt); 
+
+
+            Console.WriteLine(Math.Pow(5 , 4));
+            Console.WriteLine(Math.Sqrt(25));
+
+            string myString = "test";
+            Console.WriteLine(myString);
+
+            myString+= ". second part.";
+            Console.WriteLine(myString);
+
+            int myFirstValue = 5;
+            int mySecondValue = 7;
+            int myThirdValue = myFirstValue + mySecondValue;
+            int myFourthValue = myFirstValue * mySecondValue;
+           if(myFirstValue > mySecondValue){
+            Console.WriteLine("false");
+           }
+           else{
+            Console.WriteLine("true");
+           }
+            Console.WriteLine(myFourthValue);
+            Console.WriteLine(myThirdValue);
+            Console.WriteLine(.002m - .001m);
+            
         }
     }
 }
