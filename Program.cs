@@ -1,4 +1,5 @@
 ﻿using System;
+using HelloWorld.Models;
 
 namespace HelloWorld{
 
@@ -106,47 +107,67 @@ namespace HelloWorld{
 
             //Operators
 
-            int myInt = 5;
-            Console.WriteLine(myInt);
+        //     int myInt = 5;
+        //     Console.WriteLine(myInt);
 
-            myInt++;
+        //     myInt++;
 
-            Console.WriteLine(myInt);
+        //     Console.WriteLine(myInt);
 
-            myInt += 7;
+        //     myInt += 7;
 
-            Console.WriteLine(myInt); 
+        //     Console.WriteLine(myInt); 
 
-             myInt -= 8;
+        //      myInt -= 8;
 
-            Console.WriteLine(myInt); 
+        //     Console.WriteLine(myInt); 
 
 
-            Console.WriteLine(Math.Pow(5 , 4));
-            Console.WriteLine(Math.Sqrt(25));
+        //     Console.WriteLine(Math.Pow(5 , 4));
+        //     Console.WriteLine(Math.Sqrt(25));
 
-            string myString = "test";
-            Console.WriteLine(myString);
+        //     string myString = "test";
+        //     Console.WriteLine(myString);
 
-            myString+= ". second part.";
-            Console.WriteLine(myString);
+        //     myString+= ". second part.";
+        //     Console.WriteLine(myString);
 
-            int myFirstValue = 5;
-            int mySecondValue = 7;
-            int myThirdValue = myFirstValue + mySecondValue;
-            int myFourthValue = myFirstValue * mySecondValue;
-           if(myFirstValue > mySecondValue){
-            Console.WriteLine("false");
-           }
-           else{
-            Console.WriteLine("true");
-           }
-            Console.WriteLine(myFourthValue);
-            Console.WriteLine(myThirdValue);
-            Console.WriteLine(.002m - .001m);
+        //     int myFirstValue = 5;
+        //     int mySecondValue = 7;
+        //     int myThirdValue = myFirstValue + mySecondValue;
+        //     int myFourthValue = myFirstValue * mySecondValue;
+        //    if(myFirstValue > mySecondValue){
+        //     Console.WriteLine("false");
+        //    }
+        //    else{
+        //     Console.WriteLine("true");
+        //    }
+        //     Console.WriteLine(myFourthValue);
+        //     Console.WriteLine(myThirdValue);
+        //     Console.WriteLine(.002m - .001m);
             
-        }
+        // }
+
+
+          Computer myComputer = new Computer(){
+
+                Motherboard = "Z690",
+                HasWifi = true,
+                HasLTE = false,
+                ReleaseDate = DateTime.Now,
+                price = 943.87m,
+                VideoCard = "RTX 2070"
+
+             };
+
+             Console.WriteLine(myComputer.Motherboard);
+             Console.WriteLine(myComputer.HasLTE);
+             Console.WriteLine(myComputer.HasWifi);
+             Console.WriteLine(myComputer.ReleaseDate);
+             Console.WriteLine(myComputer.price);
+             Console.WriteLine(myComputer.VideoCard);
 
         
     }
+}
 }
